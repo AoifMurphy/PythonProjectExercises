@@ -1,3 +1,5 @@
+from numpy import ndarray
+
 print("Hello World")
 
 # Example, do not modify!
@@ -294,14 +296,21 @@ A = math.pi * r ** 2
 print("Circumference: " + str(C))
 print("Area: " + str(A))
 
-# Definition of radius
-r = 192500
+# Import numpy
+import numpy as np
 
-# Import radians function of math package
-from math import radians
 
-# Travel distance of Moon over 12 degrees. Store in dist.
-dist = r * radians(12)
+# Create list baseball
+baseball = [180, 215, 210, 210, 188, 176, 209, 200]
 
-# Print out dist
-print(dist)
+# Import the numpy package as np
+import numpy as np
+
+# Create a Numpy array from baseball: np_baseball
+np_baseball = np.array(baseball)
+
+# Print out type of np_baseball
+print(type(np_baseball))
+
+
+
