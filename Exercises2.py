@@ -1317,6 +1317,58 @@ for x in range(100) :
     random_walk.append(step)
 
 
+   # Import package
+    import numpy as np
+
+    # Assign filename to variable: file
+    file = 'digits.csv'
+
+    # Load file as array: digits
+    digits = np.loadtxt('digits.csv', delimiter=',')
+
+    # Print datatype of digits
+    print(digits)
+
+    # Select and reshape a row
+    im = digits[21, 1:]
+    im_sq = np.reshape(im, (28, 28))
+
+    # Plot reshaped data (matplotlib.pyplot already loaded as plt)
+    plt.imshow(im_sq, cmap='Greys', interpolation='nearest')
+    plt.show()
+
+    # Import package
+    import numpy as np
+
+    # Assign filename to variable: file
+    file = 'digits.csv'
+
+    # Load file as array: digits
+    digits = np.loadtxt('digits.csv', delimiter=',')
+
+    # Print datatype of digits
+    print(type(digits))
+
+    # Select and reshape a row
+    im = digits[21, 1:]
+    im_sq = np.reshape(im, (28, 28))
+
+    # Plot reshaped data (matplotlib.pyplot already loaded as plt)
+    plt.imshow(im_sq, cmap='Greys', interpolation='nearest')
+    plt.show()
+
+    # Import numpy
+    import numpy as np
+
+    # Assign the filename: file
+    file = 'digits_header.txt'
+
+    # Load the data: data
+    data = np.loadtxt(file, delimiter='\t', skiprows=1, usecols=[0, 2])
+
+    # Print data
+    print(data)
+
 
 
 
