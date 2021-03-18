@@ -41,7 +41,7 @@ with open('MobyDick.txt') as file:
 import pandas as pd
 
 # Assign the filename: file
-file = 'Titanic.csv'
+file = 'Titanic2.csv'
 
 # Read the file into a DataFrame: df
 df = pd.read_csv(file)
@@ -66,7 +66,7 @@ data_float = np.loadtxt(file, delimiter='\t', dtype='float', skiprows=1)
 print(data_float[9])
 
 # Assign the filename: file
-file = 'Titanic.csv'
+file = 'Titanic2.csv'
 
 # Import file using np.recfromcsv:
 d = np.recfromcsv(file)
@@ -103,7 +103,7 @@ plt.ylabel('percentage of larvae')
 plt.show()
 
 # Assign filename: file
- file = 'Seaslug.txt'
+file = 'Seaslug.txt'
 
 # Import file: data
 data = np.loadtxt(file, delimiter='\t', dtype=str)

@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\TestingExercises.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\healthcare-dataset-stroke-data.csv">
           <value>
             <Attribute>
